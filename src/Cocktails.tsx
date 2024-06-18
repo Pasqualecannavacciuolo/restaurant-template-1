@@ -18,21 +18,22 @@ const CocktailMenu = () => {
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.4, duration: 0.6 }}
-        className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-8"
+        className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-3 gap-8"
       >
         {/* Cocktail #1 */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.6, duration: 0.6 }}
-          className="rounded-lg overflow-hidden mx-5 my-3 flex flex-col lg:flex-row items-center justify-center"
+          className="rounded-lg overflow-hidden mx-5 my-3 flex flex-col lg:flex-col items-center justify-center"
         >
-          <div className="flex items-center mb-4 lg:mb-0 lg:mr-4">
+          {/* PARTE MOBILE */}
+          <div className="flex items-center mb-4 md:hidden">
             <motion.div
               initial={{ opacity: 0, x: 500, y: 0 }}
               animate={{ opacity: 1, x: 0, y: 0 }}
               transition={{ delay: 0.6, duration: 0.6 }}
-              className="w-16 h-16 lg:w-full lg:h-full lg:hidden flex items-center justify-center"
+              className="w-16 h-16 lg:w-full lg:h-full flex items-center justify-center"
             >
               <img
                 src={white_negroni}
@@ -50,8 +51,32 @@ const CocktailMenu = () => {
               White Negroni
             </motion.h2>
           </div>
+          {/* PARTE DESKTOP */}
+          <div className="md:flex md:flex-col md:items-center md:mb-4 hidden">
+            <motion.h2
+              initial={{ opacity: 0, x: 500, y: 0 }}
+              animate={{ opacity: 1, x: 0, y: 0 }}
+              transition={{ delay: 0.7, duration: 0.6 }}
+              className="text-2xl font-semibold mb-2 text-white cocktail-title antialiased ml-3 lg:ml-0"
+            >
+              White Negroni
+            </motion.h2>
+            <motion.div
+              initial={{ opacity: 0, x: 500, y: 0 }}
+              animate={{ opacity: 1, x: 0, y: 0 }}
+              transition={{ delay: 0.6, duration: 0.6 }}
+              className="w-16 h-auto lg:w-full lg:h-full flex items-center justify-center"
+            >
+              <img
+                src={white_negroni}
+                loading="eager"
+                alt="Negroni Bianco"
+                className="w-full h-full object-cover lg:h-48"
+              />
+            </motion.div>
+          </div>
           <div className="p-4 text-center lg:text-left flex-1">
-            <p className="text-white mb-4 text-justify lg:h-44 cocktail-description subpixel-antialiased">
+            <p className="text-white mb-4 text-justify md:h-44 cocktail-description subpixel-antialiased">
               Il{" "}
               <span className="text-highlight subpixel-antialiased">
                 White Negroni
@@ -65,7 +90,7 @@ const CocktailMenu = () => {
               l'equilibrio tra dolcezza, amarezza e complessità, rendendolo una
               scelta apprezzata per gli amanti dei cocktail raffinati.
             </p>
-            <details className="lg:mt-11">
+            <details className="xl:mt-40">
               <summary className="text-lg font-medium text-white text-justify cursor-pointer subpixel-antialiased">
                 Ingredienti
               </summary>
@@ -85,19 +110,20 @@ const CocktailMenu = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.8, duration: 0.6 }}
-          className="rounded-lg overflow-hidden mx-5 my-3 flex flex-col lg:flex-row items-center justify-center"
+          className="rounded-lg overflow-hidden mx-5 my-3 flex flex-col lg:flex-col items-center justify-center"
         >
-          <div className="flex items-center mb-4 lg:mb-0 lg:mr-4">
+          {/* PARTE MOBILE */}
+          <div className="flex items-center mb-4 md:hidden">
             <motion.div
               initial={{ opacity: 0, x: 500, y: 0 }}
               animate={{ opacity: 1, x: 0, y: 0 }}
               transition={{ delay: 0.8, duration: 0.6 }}
-              className="w-16 h-16 lg:w-full lg:h-full lg:hidden flex items-center justify-center"
+              className="w-16 h-auto lg:w-full lg:h-full flex items-center justify-center"
             >
               <img
                 src={holiday_needed}
                 loading="eager"
-                alt="Negroni Bianco"
+                alt="Holiday Needed"
                 className="w-full h-full object-cover"
               />
             </motion.div>
@@ -110,8 +136,32 @@ const CocktailMenu = () => {
               Holiday Needed
             </motion.h2>
           </div>
+          {/* PARTE DESKTOP */}
+          <div className="md:flex md:flex-col md:items-center md:mb-4 hidden">
+            <motion.h2
+              initial={{ opacity: 0, x: 500, y: 0 }}
+              animate={{ opacity: 1, x: 0, y: 0 }}
+              transition={{ delay: 0.9, duration: 0.6 }}
+              className="text-2xl font-semibold mb-2 text-white cocktail-title antialiased ml-3 lg:ml-0"
+            >
+              Holiday Needed
+            </motion.h2>
+            <motion.div
+              initial={{ opacity: 0, x: 500, y: 0 }}
+              animate={{ opacity: 1, x: 0, y: 0 }}
+              transition={{ delay: 0.8, duration: 0.6 }}
+              className="w-16 h-auto lg:w-full lg:h-full flex items-center justify-center"
+            >
+              <img
+                src={holiday_needed}
+                loading="eager"
+                alt="Negroni Bianco"
+                className="w-full h-full object-cover lg:h-48"
+              />
+            </motion.div>
+          </div>
           <div className="p-4 text-center lg:text-left flex-1">
-            <p className="text-white mb-4 text-justify lg:h-44 cocktail-description subpixel-antialiased">
+            <p className="text-white mb-4 text-justify md:h-44 cocktail-description subpixel-antialiased">
               L'{" "}
               <span className="text-highlight subpixel-antialiased">
                 L'Holiday Needed
@@ -121,7 +171,7 @@ const CocktailMenu = () => {
               rappresenta un'icona della cultura brasiliana, perfetto per chi
               ama bevande vivaci e agrumate.
             </p>
-            <details className="lg:mt-11">
+            <details className="xl:mt-40">
               <summary className="text-lg font-medium text-white text-justify cursor-pointer subpixel-antialiased">
                 Ingredienti
               </summary>
@@ -141,34 +191,59 @@ const CocktailMenu = () => {
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ delay: 1, duration: 0.6 }}
-          className="rounded-lg overflow-hidden mx-5 my-3 flex flex-col lg:flex-row items-center justify-center"
+          transition={{ delay: 0.8, duration: 0.6 }}
+          className="rounded-lg overflow-hidden mx-5 my-3 flex flex-col lg:flex-col items-center justify-center"
         >
-          <div className="flex items-center mb-4 lg:mb-0 lg:mr-4">
+          {/* PARTE MOBILE */}
+          <div className="flex items-center mb-4 md:hidden">
             <motion.div
               initial={{ opacity: 0, x: 500, y: 0 }}
               animate={{ opacity: 1, x: 0, y: 0 }}
-              transition={{ delay: 1, duration: 0.6 }}
-              className="w-16 h-16 lg:w-full lg:h-full lg:hidden flex items-center justify-center"
+              transition={{ delay: 0.8, duration: 0.6 }}
+              className="w-16 h-auto lg:w-full lg:h-full flex items-center justify-center"
             >
               <img
                 src={gimlet_al_kumquat}
                 loading="eager"
-                alt="Negroni Bianco"
+                alt="Gimlet al Kumquat"
                 className="w-full h-full object-cover"
               />
             </motion.div>
             <motion.h2
               initial={{ opacity: 0, x: 500, y: 0 }}
               animate={{ opacity: 1, x: 0, y: 0 }}
-              transition={{ delay: 1.1, duration: 0.6 }}
+              transition={{ delay: 0.9, duration: 0.6 }}
               className="text-2xl font-semibold mb-2 text-white cocktail-title antialiased ml-3 lg:ml-0"
             >
               Gimlet al Kumquat
             </motion.h2>
           </div>
+          {/* PARTE DESKTOP */}
+          <div className="md:flex md:flex-col md:items-center md:mb-4 hidden">
+            <motion.h2
+              initial={{ opacity: 0, x: 500, y: 0 }}
+              animate={{ opacity: 1, x: 0, y: 0 }}
+              transition={{ delay: 0.9, duration: 0.6 }}
+              className="text-2xl font-semibold mb-2 text-white cocktail-title antialiased ml-3 lg:ml-0"
+            >
+              Gimlet al Kumquat
+            </motion.h2>
+            <motion.div
+              initial={{ opacity: 0, x: 500, y: 0 }}
+              animate={{ opacity: 1, x: 0, y: 0 }}
+              transition={{ delay: 0.8, duration: 0.6 }}
+              className="w-16 h-auto lg:w-full lg:h-full flex items-center justify-center"
+            >
+              <img
+                src={gimlet_al_kumquat}
+                loading="eager"
+                alt="Gimlet al Kumquat"
+                className="w-full h-full object-cover lg:h-48"
+              />
+            </motion.div>
+          </div>
           <div className="p-4 text-center lg:text-left flex-1">
-            <p className="text-white mb-4 text-justify lg:h-44 cocktail-description subpixel-antialiased">
+            <p className="text-white mb-4 text-justify md:h-44 cocktail-description subpixel-antialiased">
               Il{" "}
               <span className="text-highlight subpixel-antialiased">
                 Gimlet al Kumquat
@@ -183,7 +258,7 @@ const CocktailMenu = () => {
               chi cerca un twist intrigante su un cocktail classico, ideale per
               serate estive o come aperitivo raffinato.
             </p>
-            <details className="lg:mt-11">
+            <details className="xl:mt-40">
               <summary className="text-lg font-medium text-white text-justify cursor-pointer subpixel-antialiased">
                 Ingredienti
               </summary>
