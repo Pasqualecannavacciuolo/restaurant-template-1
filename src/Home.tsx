@@ -1,12 +1,13 @@
 import logo from "./assets/logo.webp";
 import hero_cocktail_img from "./assets/hero-section-cocktail.webp";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 export default function Home() {
   return (
     <section className="text-white body-font bg-zinc-900 h-screen flex items-center justify-center">
       <div className="container mx-auto flex md:px-24 md:py-10 md:flex-row flex-col items-center justify-center">
-        <div className="lg:flex-grow mt-5 md:mt-0 md:w-1/2 lg:pr-24 md:pr-16 flex flex-col items-center md:items-start text-center md:text-left mb-7 md:mb-0 px-4">
+        <div className="lg:flex-grow mt-1 md:mt-0 md:w-1/2 lg:pr-24 md:pr-16 flex flex-col items-center md:items-start text-center md:text-left mb-3 md:mb-0 px-4">
           <img src={logo} alt="Logo" className="logo" />
           <motion.h1
             initial={{ opacity: 0 }}
@@ -30,19 +31,19 @@ export default function Home() {
             transition={{ delay: 0.6, duration: 0.5 }}
             className="flex justify-center"
           >
-            <a
-              href="cocktail"
+            <Link
+              to={"/cocktails"}
               className="inline-flex text-zinc-800 bg-[#FF6922] border-0 py-1 px-4 md:py-2 md:px-6 focus:outline-none hover:bg-[#ec7943] rounded text-lg cta"
             >
               Scopri i cocktails
-            </a>
+            </Link>
           </motion.div>
         </div>
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.8, duration: 0.5 }}
-          className="lg:max-w-lg lg:w-full mb-5 md:mb-0 md:w-1/2 w-3/6 flex justify-center"
+          className="lg:max-w-lg lg:w-full mb-1 md:mb-0 md:w-1/2 w-3/6 flex justify-center"
         >
           <img
             src={hero_cocktail_img}
