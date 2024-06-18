@@ -1,0 +1,57 @@
+@font-face {
+  font-family: "PoiretOne";
+  src: local("PoiretOne"),
+    url("./fonts/Poiret_One/PoiretOne-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat"),
+    url("./fonts/Montserrat/Montserrat-VariableFont_wght.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Montserrat Regular";
+  src: local("Montserrat-Regular"),
+    url("./fonts/Montserrat/Montserrat-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Montserrat Medium";
+  src: local("Montserrat-Medium"),
+    url("./fonts/Montserrat/Montserrat-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Montserrat SemiBold";
+  src: local("Montserrat-SemiBold"),
+    url("./fonts/Montserrat/Montserrat-SemiBold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Montserrat Bold";
+  src: local("Montserrat-Bold"),
+    url("./fonts/Montserrat/Montserrat-Bold.woff") format("woff");
+}
+
+.hero-title,
+.nav-link {
+  font-family: "PoiretOne";
+}
+
+.page-title {
+  font-family: "Montserrat Bold";
+}
+
+.cocktail-title {
+  font-family: "PoiretOne";
+}
+
+.cocktail-description,
+details {
+  font-family: "Montserrat Regular";
+}
+
+.details-summary {
+  font-family: "Montserrat Medium";
+}
