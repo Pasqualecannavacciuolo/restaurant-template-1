@@ -43,7 +43,7 @@ export default function Home() {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.8, duration: 0.5 }}
-          className="lg:max-w-lg lg:w-full mb-1 md:mb-0 md:w-1/2 w-3/6 flex justify-center"
+          className="lg:max-w-lg lg:w-full mb-1 md:mb-0 md:w-1/2 w-2/6 flex justify-center"
         >
           <img
             src={hero_cocktail_img}
