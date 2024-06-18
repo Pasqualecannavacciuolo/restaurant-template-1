@@ -60,3 +60,8 @@ details,
 .cta {
   font-family: "Montserrat Medium";
 }
+
+.text-highlight {
+  font-family: "Montserrat SemiBold";
+  color: #ff6922;
+}

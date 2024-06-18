@@ -46,13 +46,7 @@ const CocktailMenu = () => {
             </h2>
             <p className="text-white mb-4 text-justify lg:h-44 cocktail-description subpixel-antialiased">
               Il{" "}
-              <span
-                className="underline underline-offset-4"
-                style={{
-                  textDecorationColor: "#FF6922",
-                  textDecorationThickness: "4px",
-                }}
-              >
+              <span className="text-highlight subpixel-antialiased">
                 White Negroni
               </span>{" "}
               è una variante del classico Negroni che sostituisce il
@@ -74,15 +68,7 @@ const CocktailMenu = () => {
             </details>
             <p className="mt-5 prezzo text-white text-justify subpixel-antialiased">
               Prezzo:{" "}
-              <span
-                className="underline underline-offset-4"
-                style={{
-                  textDecorationColor: "#FF6922",
-                  textDecorationThickness: "4px",
-                }}
-              >
-                9€
-              </span>
+              <span className="subpixel-antialiased text-highlight">9€</span>
             </p>
           </div>
         </motion.div>
@@ -107,13 +93,7 @@ const CocktailMenu = () => {
               Holiday Needed
             </h2>
             <p className="text-white mb-4 text-justify lg:h-44 cocktail-description subpixel-antialiased">
-              <span
-                className="underline underline-offset-4"
-                style={{
-                  textDecorationColor: "#FF6922",
-                  textDecorationThickness: "4px",
-                }}
-              >
+              <span className="text-highlight subpixel-antialiased">
                 L'Holiday Needed
               </span>{" "}
               è un cocktail brasiliano fatto con cachaca, zucchero di canna e
@@ -132,15 +112,7 @@ const CocktailMenu = () => {
             </details>
             <p className="mt-5 prezzo text-white text-justify subpixel-antialiased">
               Prezzo:{" "}
-              <span
-                className="underline underline-offset-4"
-                style={{
-                  textDecorationColor: "#FF6922",
-                  textDecorationThickness: "4px",
-                }}
-              >
-                9€
-              </span>
+              <span className="text-highlight subpixel-antialiased">9€</span>
             </p>
           </div>
         </motion.div>
@@ -166,13 +138,7 @@ const CocktailMenu = () => {
             </h2>
             <p className="text-white mb-4 text-justify lg:h-44 cocktail-description subpixel-antialiased">
               Il{" "}
-              <span
-                className="underline underline-offset-4"
-                style={{
-                  textDecorationColor: "#FF6922",
-                  textDecorationThickness: "4px",
-                }}
-              >
+              <span className="text-highlight subpixel-antialiased">
                 Gimlet al Kumquat
               </span>{" "}
               è una variante del classico Gimlet che incorpora il sapore unico e
@@ -195,15 +161,7 @@ const CocktailMenu = () => {
             </details>
             <p className="mt-5 prezzo text-white text-justify subpixel-antialiased">
               Prezzo:{" "}
-              <span
-                className="underline underline-offset-4"
-                style={{
-                  textDecorationColor: "#FF6922",
-                  textDecorationThickness: "4px",
-                }}
-              >
-                9€
-              </span>
+              <span className="text-highlight subpixel-antialiased">9€</span>
             </p>
           </div>
         </motion.div>
