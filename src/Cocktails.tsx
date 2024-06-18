@@ -25,25 +25,32 @@ const CocktailMenu = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.6, duration: 0.6 }}
-          className="rounded-lg overflow-hidden mx-5 my-3 flex flex-col items-center justify-center"
+          className="rounded-lg overflow-hidden mx-5 my-3 flex flex-col lg:flex-row items-center justify-center"
         >
-          <motion.div
-            initial={{ opacity: 0, x: 500, y: 0 }}
-            animate={{ opacity: 1, x: 0, y: 0 }}
-            transition={{ delay: 0.4, duration: 0.6 }}
-            className="mb-4 lg:h-96"
-          >
-            <img
-              src={white_negroni}
-              loading="eager"
-              alt="Negroni Bianco"
-              className="w-full h-full object-cover"
-            />
-          </motion.div>
-          <div className="p-4 text-center flex-1">
-            <h2 className="text-2xl font-semibold mb-2 text-white cocktail-title antialiased">
+          <div className="flex items-center mb-4 lg:mb-0 lg:mr-4">
+            <motion.div
+              initial={{ opacity: 0, x: 500, y: 0 }}
+              animate={{ opacity: 1, x: 0, y: 0 }}
+              transition={{ delay: 0.6, duration: 0.6 }}
+              className="w-16 h-16 lg:hidden"
+            >
+              <img
+                src={white_negroni}
+                loading="eager"
+                alt="Negroni Bianco"
+                className="w-full h-full object-cover"
+              />
+            </motion.div>
+            <motion.h2
+              initial={{ opacity: 0, x: 500, y: 0 }}
+              animate={{ opacity: 1, x: 0, y: 0 }}
+              transition={{ delay: 0.7, duration: 0.6 }}
+              className="text-2xl font-semibold mb-2 text-white cocktail-title antialiased ml-3 lg:ml-0"
+            >
               White Negroni
-            </h2>
+            </motion.h2>
+          </div>
+          <div className="p-4 text-center lg:text-left flex-1">
             <p className="text-white mb-4 text-justify lg:h-44 cocktail-description subpixel-antialiased">
               Il{" "}
               <span className="text-highlight subpixel-antialiased">
@@ -78,21 +85,34 @@ const CocktailMenu = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.8, duration: 0.6 }}
-          className="rounded-lg overflow-hidden mx-5 my-3 flex flex-col items-center justify-center"
+          className="rounded-lg overflow-hidden mx-5 my-3 flex flex-col lg:flex-row items-center justify-center"
         >
-          <div className="mb-4 lg:h-96">
-            <img
-              src={holiday_needed}
-              loading="eager"
-              alt="Holiday Needed"
-              className="w-full h-auto object-cover"
-            />
-          </div>
-          <div className="p-4 text-center flex-1">
-            <h2 className="text-2xl font-semibold mb-2 text-white cocktail-title antialiased">
+          <div className="flex items-center mb-4 lg:mb-0 lg:mr-4">
+            <motion.div
+              initial={{ opacity: 0, x: 500, y: 0 }}
+              animate={{ opacity: 1, x: 0, y: 0 }}
+              transition={{ delay: 0.8, duration: 0.6 }}
+              className="w-16 h-16 lg:hidden"
+            >
+              <img
+                src={holiday_needed}
+                loading="eager"
+                alt="Negroni Bianco"
+                className="w-full h-full object-cover"
+              />
+            </motion.div>
+            <motion.h2
+              initial={{ opacity: 0, x: 500, y: 0 }}
+              animate={{ opacity: 1, x: 0, y: 0 }}
+              transition={{ delay: 0.9, duration: 0.6 }}
+              className="text-2xl font-semibold mb-2 text-white cocktail-title antialiased ml-3 lg:ml-0"
+            >
               Holiday Needed
-            </h2>
+            </motion.h2>
+          </div>
+          <div className="p-4 text-center lg:text-left flex-1">
             <p className="text-white mb-4 text-justify lg:h-44 cocktail-description subpixel-antialiased">
+              L'{" "}
               <span className="text-highlight subpixel-antialiased">
                 L'Holiday Needed
               </span>{" "}
@@ -102,7 +122,7 @@ const CocktailMenu = () => {
               ama bevande vivaci e agrumate.
             </p>
             <details className="lg:mt-11">
-              <summary className="text-lg font-medium text-white cursor-pointer text-justify subpixel-antialiased">
+              <summary className="text-lg font-medium text-white text-justify cursor-pointer subpixel-antialiased">
                 Ingredienti
               </summary>
               <p className="pt-5 pb-5 text-base font-medium text-yellow-50 text-justify subpixel-antialiased">
@@ -112,7 +132,7 @@ const CocktailMenu = () => {
             </details>
             <p className="mt-5 prezzo text-white text-justify subpixel-antialiased">
               Prezzo:{" "}
-              <span className="text-highlight subpixel-antialiased">9€</span>
+              <span className="subpixel-antialiased text-highlight">9€</span>
             </p>
           </div>
         </motion.div>
@@ -122,20 +142,32 @@ const CocktailMenu = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1, duration: 0.6 }}
-          className="rounded-lg overflow-hidden mx-5 my-3 flex flex-col items-center justify-center"
+          className="rounded-lg overflow-hidden mx-5 my-3 flex flex-col lg:flex-row items-center justify-center"
         >
-          <div className="mb-4 lg:h-96">
-            <img
-              src={gimlet_al_kumquat}
-              loading="eager"
-              alt="Gimlet al Kumquat"
-              className="w-full h-auto object-cover"
-            />
-          </div>
-          <div className="p-4 text-center flex-1">
-            <h2 className="text-2xl font-semibold mb-2 text-white cocktail-title antialiased">
+          <div className="flex items-center mb-4 lg:mb-0 lg:mr-4">
+            <motion.div
+              initial={{ opacity: 0, x: 500, y: 0 }}
+              animate={{ opacity: 1, x: 0, y: 0 }}
+              transition={{ delay: 1, duration: 0.6 }}
+              className="w-16 h-16 lg:hidden"
+            >
+              <img
+                src={gimlet_al_kumquat}
+                loading="eager"
+                alt="Negroni Bianco"
+                className="w-full h-full object-cover"
+              />
+            </motion.div>
+            <motion.h2
+              initial={{ opacity: 0, x: 500, y: 0 }}
+              animate={{ opacity: 1, x: 0, y: 0 }}
+              transition={{ delay: 1.1, duration: 0.6 }}
+              className="text-2xl font-semibold mb-2 text-white cocktail-title antialiased ml-3 lg:ml-0"
+            >
               Gimlet al Kumquat
-            </h2>
+            </motion.h2>
+          </div>
+          <div className="p-4 text-center lg:text-left flex-1">
             <p className="text-white mb-4 text-justify lg:h-44 cocktail-description subpixel-antialiased">
               Il{" "}
               <span className="text-highlight subpixel-antialiased">
@@ -152,16 +184,16 @@ const CocktailMenu = () => {
               serate estive o come aperitivo raffinato.
             </p>
             <details className="lg:mt-11">
-              <summary className="text-lg font-medium text-white cursor-pointer text-justify subpixel-antialiased">
+              <summary className="text-lg font-medium text-white text-justify cursor-pointer subpixel-antialiased">
                 Ingredienti
               </summary>
-              <p className="pt-5 pb-5 text-base font-medium text-yellow-50 text-justify details-summary subpixel-antialiased">
+              <p className="pt-5 pb-5 text-base font-medium text-yellow-50 text-justify subpixel-antialiased">
                 Plymouth Gin, Kumquat, Sherry Fino
               </p>
             </details>
             <p className="mt-5 prezzo text-white text-justify subpixel-antialiased">
               Prezzo:{" "}
-              <span className="text-highlight subpixel-antialiased">9€</span>
+              <span className="subpixel-antialiased text-highlight">9€</span>
             </p>
           </div>
         </motion.div>
