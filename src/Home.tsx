@@ -21,7 +21,7 @@ export default function Home() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.4, duration: 0.5 }}
-            className="mb-8 leading-relaxed dark:text-gray-300 md:text-xl"
+            className="mb-8 leading-relaxed dark:text-gray-300 md:text-xl hero-text"
           >
             Dove storia e innovazione si incontrano in ogni sorso e boccone.
           </motion.p>

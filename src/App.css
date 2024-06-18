@@ -48,10 +48,15 @@
 }
 
 .cocktail-description,
-details {
+details,
+.hero-text {
   font-family: "Montserrat Regular";
 }
 
 .details-summary {
+  font-family: "Montserrat Medium";
+}
+
+.cta {
   font-family: "Montserrat Medium";
 }
