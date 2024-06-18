@@ -32,7 +32,7 @@ const CocktailMenu = () => {
               initial={{ opacity: 0, x: 500, y: 0 }}
               animate={{ opacity: 1, x: 0, y: 0 }}
               transition={{ delay: 0.6, duration: 0.6 }}
-              className="w-16 h-16 lg:hidden"
+              className="w-16 h-16 lg:w-full lg:h-full lg:hidden flex items-center justify-center"
             >
               <img
                 src={white_negroni}
@@ -92,7 +92,7 @@ const CocktailMenu = () => {
               initial={{ opacity: 0, x: 500, y: 0 }}
               animate={{ opacity: 1, x: 0, y: 0 }}
               transition={{ delay: 0.8, duration: 0.6 }}
-              className="w-16 h-16 lg:hidden"
+              className="w-16 h-16 lg:w-full lg:h-full lg:hidden flex items-center justify-center"
             >
               <img
                 src={holiday_needed}
@@ -149,7 +149,7 @@ const CocktailMenu = () => {
               initial={{ opacity: 0, x: 500, y: 0 }}
               animate={{ opacity: 1, x: 0, y: 0 }}
               transition={{ delay: 1, duration: 0.6 }}
-              className="w-16 h-16 lg:hidden"
+              className="w-16 h-16 lg:w-full lg:h-full lg:hidden flex items-center justify-center"
             >
               <img
                 src={gimlet_al_kumquat}
