@@ -32,14 +32,14 @@ const RistoranteMenu = () => {
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="Antica Farmacia 1154" />
       </Helmet>
-      <motion.h1
+      <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.2, duration: 0.5 }}
         className="text-white text-center text-3xl mb-7 mt-5 page-title subpixel-antialiased"
       >
-        I nostri piatti
-      </motion.h1>
+        <h1>I nostri piatti</h1>
+      </motion.div>
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
@@ -54,14 +54,14 @@ const RistoranteMenu = () => {
           className="rounded-lg overflow-hidden mx-5 my-3 flex flex-col lg:flex-col items-center justify-center"
         >
           <div className="flex items-center mb-4 ">
-            <motion.h2
+            <motion.div
               initial={{ opacity: 0, x: 500, y: 0 }}
               animate={{ opacity: 1, x: 0, y: 0 }}
               transition={{ delay: 0.7, duration: 0.6 }}
               className="text-2xl font-semibold mb-2 text-white cocktail-title antialiased ml-3 lg:ml-0"
             >
-              Tacos di Cochinita Pilbil
-            </motion.h2>
+              <h2>Tacos di Cochinita Pilbil</h2>
+            </motion.div>
           </div>
           <div className="p-4 text-center lg:text-left flex-1">
             <p className="text-white mb-4 text-justify lg:h-28 xl:h-48 cocktail-description subpixel-antialiased">
@@ -107,14 +107,14 @@ const RistoranteMenu = () => {
           className="rounded-lg overflow-hidden mx-5 my-3 flex flex-col lg:flex-col items-center justify-center"
         >
           <div className="flex items-center mb-4 ">
-            <motion.h2
+            <motion.div
               initial={{ opacity: 0, x: 500, y: 0 }}
               animate={{ opacity: 1, x: 0, y: 0 }}
               transition={{ delay: 0.8, duration: 0.6 }}
               className="text-2xl font-semibold mb-2 text-white cocktail-title antialiased ml-3 lg:ml-0"
             >
-              Tuna Roll
-            </motion.h2>
+              <h2>Tuna Roll</h2>
+            </motion.div>
           </div>
           <div className="p-4 text-center lg:text-left flex-1">
             <p className="text-white mb-4 text-justify lg:h-28 xl:h-48 cocktail-description subpixel-antialiased">
@@ -166,14 +166,14 @@ const RistoranteMenu = () => {
           className="rounded-lg overflow-hidden mx-5 my-3 flex flex-col lg:flex-col items-center justify-center"
         >
           <div className="flex items-center mb-4 ">
-            <motion.h2
+            <motion.div
               initial={{ opacity: 0, x: 500, y: 0 }}
               animate={{ opacity: 1, x: 0, y: 0 }}
               transition={{ delay: 1, duration: 0.6 }}
               className="text-2xl font-semibold mb-2 text-white cocktail-title antialiased ml-3 lg:ml-0"
             >
-              Maritozzo salato
-            </motion.h2>
+              <h2>Maritozzo salato</h2>
+            </motion.div>
           </div>
           <div className="p-4 text-center lg:text-left flex-1">
             <p className="text-white mb-4 text-justify lg:h-28 xl:h-48 cocktail-description subpixel-antialiased">

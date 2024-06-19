@@ -32,14 +32,14 @@ const CocktailMenu = () => {
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="Antica Farmacia 1154" />
       </Helmet>
-      <motion.h1
+      <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.2, duration: 0.5 }}
         className="text-white text-center text-3xl mb-7 mt-5 page-title subpixel-antialiased"
       >
-        I nostri cocktail
-      </motion.h1>
+        <h1>I nostri cocktail</h1>
+      </motion.div>
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
@@ -68,25 +68,25 @@ const CocktailMenu = () => {
                 className="w-full h-full object-cover"
               />
             </motion.div>
-            <motion.h2
+            <motion.div
               initial={{ opacity: 0, x: 500, y: 0 }}
               animate={{ opacity: 1, x: 0, y: 0 }}
               transition={{ delay: 0.7, duration: 0.6 }}
               className="text-2xl font-semibold mb-2 text-white cocktail-title antialiased ml-3 lg:ml-0"
             >
-              White Negroni
-            </motion.h2>
+              <h2>White Negroni</h2>
+            </motion.div>
           </div>
           {/* PARTE DESKTOP */}
           <div className="md:flex md:flex-col md:items-center md:mb-4 hidden">
-            <motion.h2
+            <motion.div
               initial={{ opacity: 0, x: 500, y: 0 }}
               animate={{ opacity: 1, x: 0, y: 0 }}
               transition={{ delay: 0.7, duration: 0.6 }}
               className="text-2xl font-semibold mb-2 text-white cocktail-title antialiased ml-3 lg:ml-0"
             >
-              White Negroni
-            </motion.h2>
+              <h2>White Negroni</h2>
+            </motion.div>
             <motion.div
               initial={{ opacity: 0, x: 500, y: 0 }}
               animate={{ opacity: 1, x: 0, y: 0 }}
@@ -153,25 +153,25 @@ const CocktailMenu = () => {
                 className="w-full h-full object-cover"
               />
             </motion.div>
-            <motion.h2
+            <motion.div
               initial={{ opacity: 0, x: 500, y: 0 }}
               animate={{ opacity: 1, x: 0, y: 0 }}
               transition={{ delay: 0.9, duration: 0.6 }}
               className="text-2xl font-semibold mb-2 text-white cocktail-title antialiased ml-3 lg:ml-0"
             >
-              Holiday Needed
-            </motion.h2>
+              <h2>Holiday Needed</h2>
+            </motion.div>
           </div>
           {/* PARTE DESKTOP */}
           <div className="md:flex md:flex-col md:items-center md:mb-4 hidden">
-            <motion.h2
+            <motion.div
               initial={{ opacity: 0, x: 500, y: 0 }}
               animate={{ opacity: 1, x: 0, y: 0 }}
               transition={{ delay: 0.9, duration: 0.6 }}
               className="text-2xl font-semibold mb-2 text-white cocktail-title antialiased ml-3 lg:ml-0"
             >
-              Holiday Needed
-            </motion.h2>
+              <h2>Holiday Needed</h2>
+            </motion.div>
             <motion.div
               initial={{ opacity: 0, x: 500, y: 0 }}
               animate={{ opacity: 1, x: 0, y: 0 }}
@@ -235,25 +235,25 @@ const CocktailMenu = () => {
                 className="w-full h-full object-cover"
               />
             </motion.div>
-            <motion.h2
+            <motion.div
               initial={{ opacity: 0, x: 500, y: 0 }}
               animate={{ opacity: 1, x: 0, y: 0 }}
               transition={{ delay: 0.9, duration: 0.6 }}
               className="text-2xl font-semibold mb-2 text-white cocktail-title antialiased ml-3 lg:ml-0"
             >
-              Gimlet al Kumquat
-            </motion.h2>
+              <h2>Gimlet al Kumquat</h2>
+            </motion.div>
           </div>
           {/* PARTE DESKTOP */}
           <div className="md:flex md:flex-col md:items-center md:mb-4 hidden">
-            <motion.h2
+            <motion.div
               initial={{ opacity: 0, x: 500, y: 0 }}
               animate={{ opacity: 1, x: 0, y: 0 }}
               transition={{ delay: 0.9, duration: 0.6 }}
               className="text-2xl font-semibold mb-2 text-white cocktail-title antialiased ml-3 lg:ml-0"
             >
-              Gimlet al Kumquat
-            </motion.h2>
+              <h2>Gimlet al Kumquat</h2>
+            </motion.div>
             <motion.div
               initial={{ opacity: 0, x: 500, y: 0 }}
               animate={{ opacity: 1, x: 0, y: 0 }}

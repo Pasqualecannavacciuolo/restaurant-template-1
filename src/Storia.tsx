@@ -30,9 +30,9 @@ const Storia = () => {
       </Helmet>
       <main className="p-8 rounded-lg shadow-md w-full max-w-4xl">
         <section>
-          <h2 className="text-2xl font-bold mb-4 text-center text-white page-title">
+          <h1 className="text-2xl font-bold mb-4 text-center text-white page-title">
             La nostra storia
-          </h2>
+          </h1>
 
           <div className="mb-6 text-center">
             <img

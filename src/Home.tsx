@@ -15,7 +15,7 @@ export default function Home() {
         />
         <meta
           name="keywords"
-          content="Antica Farmacia 1154, cocktail, piatti raffinati, storia, innovazione, cocktail bar, ristorante"
+          content="Antica Farmacia 1154, cocktail, piatti raffinati, innovazione, cocktail bar, ristorante, ristorazione, cibo"
         />
         <meta
           property="og:title"
@@ -31,23 +31,28 @@ export default function Home() {
       </Helmet>
       <div className="container mx-auto flex md:px-24 md:py-10 md:flex-row flex-col items-center justify-center">
         <div className="lg:flex-grow mt-1 md:mt-0 md:w-1/2 lg:pr-24 md:pr-16 flex flex-col items-center md:items-start text-center md:text-left mb-3 md:mb-0 px-4">
-          <img src={logo} alt="Logo" className="logo" />
-          <motion.h1
+          <img src={logo} alt="Antica Farmacia 1154 logo" className="logo" />
+          <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.2, duration: 0.5 }}
             className="hero-title text-4xl font-extrabold leading-9 tracking-tight mb-3 text-white sm:text-4xl sm:leading-10 md:text-7xl md:leading-normal"
           >
-            Antica Farmacia 1154
-          </motion.h1>
-          <motion.p
+            <h1>Antica Farmacia 1154</h1>
+          </motion.div>
+          <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.4, duration: 0.5 }}
             className="mb-8 leading-relaxed dark:text-gray-300 md:text-xl hero-text"
           >
-            Dove storia e innovazione si incontrano in ogni sorso e boccone.
-          </motion.p>
+            <p>
+              Scopri la storia di Antica Farmacia 1154, dove tradizione e
+              innovazione si incontrano. Dal nostro inizio fino ad oggi, il
+              nostro impegno nel creare esperienze uniche con cocktail e piatti
+              raffinati.
+            </p>
+          </motion.div>
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
