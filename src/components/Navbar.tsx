@@ -88,6 +88,7 @@ const Navbar: React.FC = () => {
       {/* Mobile Navbar (Drawer) */}
       <div className="xl:hidden bg-zinc-900 flex justify-between items-center py-4 px-2">
         <button
+          aria-label="mobile-menu-button"
           className="text-gray-500 hover:text-gray-600 toggle-button"
           onClick={toggleMobileDrawer}
         >
