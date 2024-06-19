@@ -34,6 +34,10 @@
     url("./fonts/Montserrat/Montserrat-Bold.woff") format("woff");
 }
 
+.no-underline {
+  text-decoration: none;
+}
+
 .hero-title,
 .nav-link {
   font-family: "PoiretOne";
