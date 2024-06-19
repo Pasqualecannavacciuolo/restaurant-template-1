@@ -51,10 +51,15 @@ const Storia = () => {
               initial={{ opacity: 0, x: 500, y: 0 }}
               animate={{ opacity: 1, x: 0, y: 0 }}
               transition={{ delay: 0.6, duration: 0.6 }}
-              className="w-full h-64 object-cover rounded-lg mb-4 mx-auto"
+              className="w-full h-auto xl:h-64 object-cover rounded-lg mb-4 mx-auto"
               style={{ maxWidth: "600px" }}
             >
-              <img src={top_image} alt="Palazzo Troisi" />
+              <img
+                src={top_image}
+                alt="Palazzo Troisi"
+                className="w-full h-auto xl:h-64 object-cover rounded-lg mb-4 mx-auto"
+                style={{ maxWidth: "600px" }}
+              />
             </motion.div>
             <motion.div
               initial={{ opacity: 0, x: -500, y: 0 }}
@@ -80,10 +85,15 @@ const Storia = () => {
               initial={{ opacity: 0, x: 500, y: 0 }}
               animate={{ opacity: 1, x: 0, y: 0 }}
               transition={{ delay: 0.8, duration: 0.6 }}
-              className="w-full h-64 object-cover rounded-lg mb-4 mx-auto"
+              className="w-full h-auto xl:h-64 object-cover rounded-lg mb-4 mx-auto"
               style={{ maxWidth: "600px" }}
             >
-              <img src={center_image} alt="Interno del locale" />
+              <img
+                src={center_image}
+                alt="Interno del locale"
+                className="w-full h-auto xl:h-64 object-cover rounded-lg mb-4 mx-auto"
+                style={{ maxWidth: "600px" }}
+              />
             </motion.div>
             <motion.div
               initial={{ opacity: 0, x: -500, y: 0 }}
@@ -112,10 +122,15 @@ const Storia = () => {
               initial={{ opacity: 0, x: 500, y: 0 }}
               animate={{ opacity: 1, x: 0, y: 0 }}
               transition={{ delay: 1, duration: 0.6 }}
-              className="w-full h-auto object-cover rounded-lg mb-4 mx-auto"
+              className="w-full h-auto xl:h-64 object-cover rounded-lg mb-4 mx-auto"
               style={{ maxWidth: "600px" }}
             >
-              <img src={bottom_image} alt="Cocktail e piatti" />
+              <img
+                src={bottom_image}
+                alt="Cocktail e piatti"
+                className="w-full h-auto xl:h-64 object-cover rounded-lg mb-4 mx-auto"
+                style={{ maxWidth: "600px" }}
+              />
             </motion.div>
             <motion.div
               initial={{ opacity: 0, x: -500, y: 0 }}
