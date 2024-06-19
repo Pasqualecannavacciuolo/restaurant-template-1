@@ -2,10 +2,22 @@ import white_negroni from "./assets/white_negroni.webp";
 import holiday_needed from "./assets/delicious-caipirinha-with-lemon-slices.webp";
 import gimlet_al_kumquat from "./assets/GIMLET AL KUMQUAT.webp";
 import { motion } from "framer-motion";
+import { Helmet } from "react-helmet";
 
 const CocktailMenu = () => {
   return (
     <main className="py-8 bg-zinc-900 min-h-screen">
+      <Helmet>
+        <title>Scopri i Nostri Cocktail - Antica Farmacia 1154</title>
+        <meta
+          name="description"
+          content="Esplora i nostri cocktail unici preparati con ingredienti freschi e creatività. Scopri il White Negroni, Holiday Needed, Gimlet al Kumquat e altri cocktail raffinati."
+        />
+        <meta
+          name="keywords"
+          content="cocktail, White Negroni, Holiday Needed, Gimlet al Kumquat, Antica Farmacia 1154, mixology, drink"
+        />
+      </Helmet>
       <motion.h1
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}

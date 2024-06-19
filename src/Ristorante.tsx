@@ -2,10 +2,22 @@ import { motion } from "framer-motion";
 import hot_food_icon from "./assets/ristorante/hot.webp";
 import cold_food_icon from "./assets/ristorante/cold.webp";
 import bio_food_icon from "./assets/ristorante/bio.webp";
+import { Helmet } from "react-helmet";
 
 const RistoranteMenu = () => {
   return (
     <main className="py-8 bg-zinc-900 min-h-screen">
+      <Helmet>
+        <title>I Nostri Piatti - Antica Farmacia 1154</title>
+        <meta
+          name="description"
+          content="Scopri i nostri piatti raffinati e deliziosi, dal Tacos di Cochinita Pibil al Tuna Roll e al Maritozzo Salato. Gusta la nostra cucina che combina tradizione e innovazione."
+        />
+        <meta
+          name="keywords"
+          content="piatti raffinati, Tacos di Cochinita Pibil, Tuna Roll, Maritozzo Salato, Antica Farmacia 1154, cucina raffinata, cucina internazionale"
+        />
+      </Helmet>
       <motion.h1
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}

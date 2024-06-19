@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet";
 import top_image from "./assets/storia/1.webp";
 import center_image from "./assets/storia/2.webp";
 import bottom_image from "./assets/storia/3.webp";
@@ -5,6 +6,17 @@ import bottom_image from "./assets/storia/3.webp";
 const Storia = () => {
   return (
     <div className="bg-zinc-900 font-sans leading-normal tracking-normal min-h-screen flex items-center justify-center">
+      <Helmet>
+        <title>La Nostra Storia - Antica Farmacia 1154</title>
+        <meta
+          name="description"
+          content="Scopri la storia di Antica Farmacia 1154, dove tradizione e innovazione si incontrano. Dal nostro inizio fino ad oggi, il nostro impegno nel creare esperienze uniche con cocktail e piatti raffinati."
+        />
+        <meta
+          name="keywords"
+          content="storia, Antica Farmacia 1154, tradizione, innovazione, cocktail, piatti raffinati"
+        />
+      </Helmet>
       <main className="p-8 rounded-lg shadow-md w-full max-w-4xl">
         <section>
           <h2 className="text-2xl font-bold mb-4 text-center text-white page-title">

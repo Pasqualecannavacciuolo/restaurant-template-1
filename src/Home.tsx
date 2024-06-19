@@ -2,10 +2,22 @@ import logo from "./assets/logo.webp";
 import hero_cocktail_img from "./assets/hero-section-cocktail.webp";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 export default function Home() {
   return (
     <section className="text-white body-font bg-zinc-900 h-screen flex items-center justify-center">
+      <Helmet>
+        <title>Antica Farmacia 1154 - Cocktail e Piatti Raffinati</title>
+        <meta
+          name="description"
+          content="Scopri l'Antica Farmacia 1154, dove storia e innovazione si incontrano in ogni sorso e boccone. Esplora i nostri cocktail e piatti raffinati."
+        />
+        <meta
+          name="keywords"
+          content="Antica Farmacia 1154, cocktail, piatti raffinati, storia, innovazione, cocktail bar, ristorante"
+        />
+      </Helmet>
       <div className="container mx-auto flex md:px-24 md:py-10 md:flex-row flex-col items-center justify-center">
         <div className="lg:flex-grow mt-1 md:mt-0 md:w-1/2 lg:pr-24 md:pr-16 flex flex-col items-center md:items-start text-center md:text-left mb-3 md:mb-0 px-4">
           <img src={logo} alt="Logo" className="logo" />
