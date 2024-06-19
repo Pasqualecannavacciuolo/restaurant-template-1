@@ -27,6 +27,7 @@ export default function Home() {
         />
         <meta property="og:url" content="https://antica-farmacia.netlify.app" />
         <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Antica Farmacia 1154" />
       </Helmet>
       <div className="container mx-auto flex md:px-24 md:py-10 md:flex-row flex-col items-center justify-center">
         <div className="lg:flex-grow mt-1 md:mt-0 md:w-1/2 lg:pr-24 md:pr-16 flex flex-col items-center md:items-start text-center md:text-left mb-3 md:mb-0 px-4">

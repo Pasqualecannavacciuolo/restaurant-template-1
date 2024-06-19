@@ -30,6 +30,7 @@ const RistoranteMenu = () => {
           content="https://antica-farmacia.netlify.app/ristorante"
         />
         <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Antica Farmacia 1154" />
       </Helmet>
       <motion.h1
         initial={{ opacity: 0 }}

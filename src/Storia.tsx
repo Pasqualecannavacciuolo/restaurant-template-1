@@ -26,6 +26,7 @@ const Storia = () => {
           content="https://antica-farmacia.netlify.app/storia"
         />
         <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Antica Farmacia 1154" />
       </Helmet>
       <main className="p-8 rounded-lg shadow-md w-full max-w-4xl">
         <section>
