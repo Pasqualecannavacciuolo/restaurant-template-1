@@ -5,6 +5,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import CocktailMenu from "./Cocktails.tsx";
 import Home from "./Home.tsx";
 import RistoranteMenu from "./Ristorante.tsx";
+import Storia from "./Storia.tsx";
 
 const router = createBrowserRouter([
   {
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
       {
         path: "/ristorante",
         element: <RistoranteMenu />,
+      },
+      {
+        path: "/storia",
+        element: <Storia />,
       },
     ],
   },
