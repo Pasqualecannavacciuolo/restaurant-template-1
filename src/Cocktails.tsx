@@ -90,7 +90,7 @@ const CocktailMenu = () => {
               l'equilibrio tra dolcezza, amarezza e complessità, rendendolo una
               scelta apprezzata per gli amanti dei cocktail raffinati.
             </p>
-            <details className="xl:mt-40">
+            <details className="xl:mt-16">
               <summary className="text-lg font-medium text-white text-justify cursor-pointer subpixel-antialiased">
                 Ingredienti
               </summary>
@@ -171,7 +171,7 @@ const CocktailMenu = () => {
               rappresenta un'icona della cultura brasiliana, perfetto per chi
               ama bevande vivaci e agrumate.
             </p>
-            <details className="xl:mt-40">
+            <details className="xl:mt-16">
               <summary className="text-lg font-medium text-white text-justify cursor-pointer subpixel-antialiased">
                 Ingredienti
               </summary>
@@ -258,7 +258,7 @@ const CocktailMenu = () => {
               chi cerca un twist intrigante su un cocktail classico, ideale per
               serate estive o come aperitivo raffinato.
             </p>
-            <details className="xl:mt-40">
+            <details className="xl:mt-16">
               <summary className="text-lg font-medium text-white text-justify cursor-pointer subpixel-antialiased">
                 Ingredienti
               </summary>
