@@ -17,6 +17,16 @@ export default function Home() {
           name="keywords"
           content="Antica Farmacia 1154, cocktail, piatti raffinati, storia, innovazione, cocktail bar, ristorante"
         />
+        <meta
+          property="og:title"
+          content="Antica Farmacia 1154 - Cocktail e Piatti Raffinati"
+        />
+        <meta
+          property="og:description"
+          content="Scopri la storia di Antica Farmacia 1154, dove tradizione e innovazione si incontrano. Dal nostro inizio fino ad oggi, il nostro impegno nel creare esperienze uniche con cocktail e piatti raffinati."
+        />
+        <meta property="og:url" content="https://antica-farmacia.netlify.app" />
+        <meta property="og:type" content="website" />
       </Helmet>
       <div className="container mx-auto flex md:px-24 md:py-10 md:flex-row flex-col items-center justify-center">
         <div className="lg:flex-grow mt-1 md:mt-0 md:w-1/2 lg:pr-24 md:pr-16 flex flex-col items-center md:items-start text-center md:text-left mb-3 md:mb-0 px-4">

@@ -17,6 +17,19 @@ const CocktailMenu = () => {
           name="keywords"
           content="cocktail, White Negroni, Holiday Needed, Gimlet al Kumquat, Antica Farmacia 1154, mixology, drink"
         />
+        <meta
+          property="og:title"
+          content="Scopri i Nostri Cocktail - Antica Farmacia 1154"
+        />
+        <meta
+          property="og:description"
+          content="Esplora i nostri cocktail unici preparati con ingredienti freschi e creatività. Scopri il White Negroni, Holiday Needed, Gimlet al Kumquat e altri cocktail raffinati."
+        />
+        <meta
+          property="og:url"
+          content="https://antica-farmacia.netlify.app/cocktails"
+        />
+        <meta property="og:type" content="website" />
       </Helmet>
       <motion.h1
         initial={{ opacity: 0 }}

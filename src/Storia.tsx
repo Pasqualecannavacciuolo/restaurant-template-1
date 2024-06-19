@@ -16,6 +16,16 @@ const Storia = () => {
           name="keywords"
           content="storia, Antica Farmacia 1154, tradizione, innovazione, cocktail, piatti raffinati"
         />
+        <meta property="og:title" content="Storia dell'Antica Farmacia 1154" />
+        <meta
+          property="og:description"
+          content="Scopri la storia di Antica Farmacia 1154, dove tradizione e innovazione si incontrano. Dal nostro inizio fino ad oggi, il nostro impegno nel creare esperienze uniche con cocktail e piatti raffinati."
+        />
+        <meta
+          property="og:url"
+          content="https://antica-farmacia.netlify.app/storia"
+        />
+        <meta property="og:type" content="website" />
       </Helmet>
       <main className="p-8 rounded-lg shadow-md w-full max-w-4xl">
         <section>

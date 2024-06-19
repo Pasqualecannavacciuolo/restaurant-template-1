@@ -17,6 +17,19 @@ const RistoranteMenu = () => {
           name="keywords"
           content="piatti raffinati, Tacos di Cochinita Pibil, Tuna Roll, Maritozzo Salato, Antica Farmacia 1154, cucina raffinata, cucina internazionale"
         />
+        <meta
+          property="og:title"
+          content="I Nostri Piatti - Antica Farmacia 1154"
+        />
+        <meta
+          property="og:description"
+          content="Scopri i nostri piatti raffinati e deliziosi, dal Tacos di Cochinita Pibil al Tuna Roll e al Maritozzo Salato. Gusta la nostra cucina che combina tradizione e innovazione."
+        />
+        <meta
+          property="og:url"
+          content="https://antica-farmacia.netlify.app/ristorante"
+        />
+        <meta property="og:type" content="website" />
       </Helmet>
       <motion.h1
         initial={{ opacity: 0 }}
