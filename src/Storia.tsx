@@ -51,25 +51,19 @@ const Storia = () => {
               initial={{ opacity: 0, x: 500, y: 0 }}
               animate={{ opacity: 1, x: 0, y: 0 }}
               transition={{ delay: 0.6, duration: 0.6 }}
-              className="w-16 h-16 lg:w-full lg:h-full flex items-center justify-center"
+              className="w-full h-64 object-cover rounded-lg mb-4 mx-auto"
+              style={{ maxWidth: "600px" }}
             >
-              <img
-                src={top_image}
-                alt="Palazzo Troisi"
-                className="w-full h-64 object-cover rounded-lg mb-4 mx-auto"
-                style={{ maxWidth: "600px" }}
-              />
+              <img src={top_image} alt="Palazzo Troisi" />
             </motion.div>
             <motion.div
               initial={{ opacity: 0, x: -500, y: 0 }}
               animate={{ opacity: 1, x: 0, y: 0 }}
               transition={{ delay: 0.6, duration: 0.6 }}
-              className="w-16 h-16 lg:w-full lg:h-full flex items-center justify-center"
+              className="text-white text-lg mx-auto about-description text-justify"
+              style={{ maxWidth: "600px" }}
             >
-              <p
-                className="text-white text-lg mx-auto about-description text-justify"
-                style={{ maxWidth: "600px" }}
-              >
+              <p>
                 Situata nel Palazzo Troisi, storico palazzo del 1800 costruito
                 proprio nella piazza principale di Arienzo, cittadina della
                 terra murata che ha origini nel 1154 e che rappresenta il nucleo
@@ -86,25 +80,19 @@ const Storia = () => {
               initial={{ opacity: 0, x: 500, y: 0 }}
               animate={{ opacity: 1, x: 0, y: 0 }}
               transition={{ delay: 0.8, duration: 0.6 }}
-              className="w-16 h-16 lg:w-full lg:h-full flex items-center justify-center"
+              className="w-full h-64 object-cover rounded-lg mb-4 mx-auto"
+              style={{ maxWidth: "600px" }}
             >
-              <img
-                src={center_image}
-                alt="Interno del locale"
-                className="w-full h-64 object-cover rounded-lg mb-4 mx-auto"
-                style={{ maxWidth: "600px" }}
-              />
+              <img src={center_image} alt="Interno del locale" />
             </motion.div>
             <motion.div
               initial={{ opacity: 0, x: -500, y: 0 }}
               animate={{ opacity: 1, x: 0, y: 0 }}
               transition={{ delay: 0.8, duration: 0.6 }}
-              className="w-16 h-16 lg:w-full lg:h-full flex items-center justify-center"
+              className="text-white text-lg mx-auto about-description text-justify"
+              style={{ maxWidth: "600px" }}
             >
-              <p
-                className="text-white text-lg mx-auto about-description text-justify"
-                style={{ maxWidth: "600px" }}
-              >
+              <p>
                 E’ proprio qui che nel Giugno 2021 nasce Antica Farmacia 1154,
                 un luogo di tendenza che abbina sempre più di frequente cocktail
                 e food. Il locale nasce come mezzo di espressione dei fratelli
@@ -124,25 +112,19 @@ const Storia = () => {
               initial={{ opacity: 0, x: 500, y: 0 }}
               animate={{ opacity: 1, x: 0, y: 0 }}
               transition={{ delay: 1, duration: 0.6 }}
-              className="w-16 h-16 lg:w-full lg:h-full flex items-center justify-center"
+              className="w-full h-auto object-cover rounded-lg mb-4 mx-auto"
+              style={{ maxWidth: "600px" }}
             >
-              <img
-                src={bottom_image}
-                alt="Cocktail e piatti"
-                className="w-full h-64 object-cover rounded-lg mb-4 mx-auto"
-                style={{ maxWidth: "600px" }}
-              />
+              <img src={bottom_image} alt="Cocktail e piatti" />
             </motion.div>
             <motion.div
               initial={{ opacity: 0, x: -500, y: 0 }}
               animate={{ opacity: 1, x: 0, y: 0 }}
               transition={{ delay: 1, duration: 0.6 }}
-              className="w-16 h-16 lg:w-full lg:h-full flex items-center justify-center"
+              className="text-white text-lg mx-auto about-description text-justify"
+              style={{ maxWidth: "600px" }}
             >
-              <p
-                className="text-white text-lg mx-auto about-description text-justify"
-                style={{ maxWidth: "600px" }}
-              >
+              <p>
                 Antica Farmacia 1154 offre una cucina autentica: piatti con
                 influenze giapponesi, peruviane, spagnole e cinesi, ma
                 soprattutto dai sapori mediterranei, con ingredienti stagionali
