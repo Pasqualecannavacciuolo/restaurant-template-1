@@ -34,8 +34,8 @@
     url("./fonts/Montserrat/Montserrat-Bold.woff") format("woff");
 }
 
-.no-underline {
-  text-decoration: none;
+.active-nav-link {
+  color: #ff6922;
 }
 
 .hero-title,

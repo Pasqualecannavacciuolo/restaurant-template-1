@@ -2,29 +2,22 @@ import { useEffect, useState } from "react";
 import { Link, Outlet, useLocation } from "react-router-dom";
 
 const Navbar: React.FC = () => {
-  // State to hold the current path
   const [currentPath, setCurrentPath] = useState("");
-
-  // State to manage mobile drawer
   const [isMobileDrawerOpen, setIsMobileDrawerOpen] = useState(false);
 
-  // Update currentPath when location changes
   const location = useLocation();
   useEffect(() => {
     setCurrentPath(location.pathname);
   }, [location]);
 
-  // Toggle mobile drawer
   const toggleMobileDrawer = () => {
     setIsMobileDrawerOpen(!isMobileDrawerOpen);
   };
 
-  // Function to close mobile drawer
   const closeMobileDrawer = () => {
     setIsMobileDrawerOpen(false);
   };
 
-  // Effect to handle click outside of the drawer
   useEffect(() => {
     const handleOutsideClick = (event: MouseEvent) => {
       const target = event.target as HTMLElement;
@@ -46,13 +39,13 @@ const Navbar: React.FC = () => {
   return (
     <>
       {/* Desktop Navbar */}
-      <div className="hidden xl:flex bg-zinc-900 items-center justify-center pt-5">
+      <div className="hidden md:flex bg-zinc-900 items-center justify-center pt-5 gap-5">
         <NavLink
           path="/"
           currentPath={currentPath}
           label="Home"
-          baseClass="nav-link text-white text-xl"
-          activeClass="text-[#FF6922]"
+          baseClass="nav-link text-xl"
+          activeClass="active-nav-link"
           isMobileDrawerOpen={isMobileDrawerOpen}
           onClick={closeMobileDrawer}
         />
@@ -60,7 +53,7 @@ const Navbar: React.FC = () => {
           path="/cocktails"
           currentPath={currentPath}
           label="Cocktails"
-          baseClass="nav-link text-white text-xl"
+          baseClass="nav-link text-xl"
           activeClass="text-[#FF6922]"
           isMobileDrawerOpen={isMobileDrawerOpen}
           onClick={closeMobileDrawer}
@@ -69,7 +62,7 @@ const Navbar: React.FC = () => {
           path="/ristorante"
           currentPath={currentPath}
           label="Ristorante"
-          baseClass="nav-link text-white text-xl"
+          baseClass="nav-link text-xl"
           activeClass="text-[#FF6922]"
           isMobileDrawerOpen={isMobileDrawerOpen}
           onClick={closeMobileDrawer}
@@ -78,7 +71,7 @@ const Navbar: React.FC = () => {
           path="/storia"
           currentPath={currentPath}
           label="Storia"
-          baseClass="nav-link text-white text-xl"
+          baseClass="nav-link text-xl"
           activeClass="text-[#FF6922]"
           isMobileDrawerOpen={isMobileDrawerOpen}
           onClick={closeMobileDrawer}
@@ -86,10 +79,10 @@ const Navbar: React.FC = () => {
       </div>
 
       {/* Mobile Navbar (Drawer) */}
-      <div className="xl:hidden bg-zinc-900 flex justify-between items-center py-4 px-2">
+      <div className="md:hidden bg-zinc-900 flex justify-between items-center py-4 px-2">
         <button
-          aria-label="mobile-menu-button"
-          className="text-gray-500 hover:text-gray-600 toggle-button"
+          aria-label="mobile-menu-open-button"
+          className="text-gray-500 hover:text-gray-600"
           onClick={toggleMobileDrawer}
         >
           <svg
@@ -120,15 +113,16 @@ const Navbar: React.FC = () => {
 
       {/* Mobile Drawer Content */}
       <div
-        className={`xl:hidden bg-zinc-800 text-white w-56 min-h-screen overflow-y-auto fixed top-0 left-0 transform transition-transform duration-300 ease-in-out mobile-drawer ${
+        className={`md:hidden bg-zinc-800 text-white w-56 min-h-screen overflow-y-auto fixed top-0 left-0 transform transition-transform duration-300 ease-in-out ${
           isMobileDrawerOpen ? "translate-x-0" : "-translate-x-full"
         }`}
       >
         <div className="p-4">
           <div className="flex flex-row justify-between">
-            <h1 className="text-2xl font-semibold page-title">Menu</h1>
+            <h1 className="text-2xl font-semibold mb-3 page-title">Menu</h1>
             {isMobileDrawerOpen && (
               <button
+                aria-label="mobile-menu-close-button"
                 className="text-gray-500 hover:text-gray-600 toggle-button"
                 onClick={toggleMobileDrawer}
               >
@@ -149,12 +143,12 @@ const Navbar: React.FC = () => {
               </button>
             )}
           </div>
-          <ul className="mt-4">
+          <div className="flex flex-col gap-5">
             <NavLink
               path="/"
               currentPath={currentPath}
               label="Home"
-              baseClass="nav-link text-white text-xl"
+              baseClass="nav-link text-xl"
               activeClass="text-[#FF6922]"
               isMobileDrawerOpen={isMobileDrawerOpen}
               onClick={closeMobileDrawer}
@@ -163,7 +157,7 @@ const Navbar: React.FC = () => {
               path="/cocktails"
               currentPath={currentPath}
               label="Cocktails"
-              baseClass="nav-link text-white text-xl"
+              baseClass="nav-link text-xl"
               activeClass="text-[#FF6922]"
               isMobileDrawerOpen={isMobileDrawerOpen}
               onClick={closeMobileDrawer}
@@ -172,7 +166,7 @@ const Navbar: React.FC = () => {
               path="/ristorante"
               currentPath={currentPath}
               label="Ristorante"
-              baseClass="nav-link text-white text-xl"
+              baseClass="nav-link text-xl"
               activeClass="text-[#FF6922]"
               isMobileDrawerOpen={isMobileDrawerOpen}
               onClick={closeMobileDrawer}
@@ -181,16 +175,17 @@ const Navbar: React.FC = () => {
               path="/storia"
               currentPath={currentPath}
               label="Storia"
-              baseClass="nav-link text-white text-xl"
+              baseClass="nav-link text-xl"
               activeClass="text-[#FF6922]"
               isMobileDrawerOpen={isMobileDrawerOpen}
               onClick={closeMobileDrawer}
             />
-          </ul>
+          </div>
         </div>
       </div>
 
       {/* Content */}
+
       <Outlet />
     </>
   );
@@ -216,15 +211,13 @@ const NavLink = ({
   const isCurrentPath = currentPath === path;
 
   return (
-    <li className="mb-2">
-      <Link
-        to={path}
-        className={`${baseClass}  ${isCurrentPath ? activeClass : ""}`}
-        onClick={onClick}
-      >
-        {label}
-      </Link>
-    </li>
+    <Link
+      to={path}
+      className={`${baseClass} ${isCurrentPath ? activeClass : "text-white"}`}
+      onClick={onClick}
+    >
+      {label}
+    </Link>
   );
 };
 
